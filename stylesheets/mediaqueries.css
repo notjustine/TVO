@@ -1,0 +1,25 @@
+/*WHEN SMALL SCREEN*/
+@media screen and (max-width: 640px) {
+    #topmenu {
+        display: none;
+    }
+}
+/*WHEN LARGE SCREEN*/
+@media screen and (min-width: 641px) {
+    #hamburger {
+        display: none;
+    }
+    #side {
+        display: none;
+    }
+}
+/*WHEN V LARGE SCREEN*/
+/*
+@media screen and (min-width: 1200px) {
+    .left {
+        float: left;
+    }
+    .right {
+        float: right;
+    }
+}*/

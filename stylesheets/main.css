@@ -1,0 +1,163 @@
+body {
+    font-family: Arial, sans-serif;
+}
+#banner {
+/*    display: none;*/
+    width: 100%; height: auto;
+    background-color: white;
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);
+    z-index: +2;
+}
+#TVOKidsLogo {
+    width: 25%; height: auto;
+    min-width: 175px; max-width: 250px;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+    margin-left: 2em; 
+    z-index: -2;
+}
+#topmenu {
+    display: inline;
+    position: relative;
+    left: 3%; bottom: 35px; 
+    font-size: 120%;
+    font-weight: bold;
+}
+#banner nav a {
+    margin-left: 3%;
+}
+#banner nav a:link,
+#banner nav a:visited {
+    text-decoration: none;
+    color: #763188;
+    opacity: 75%;
+}
+#banner nav a:hover,
+#banner nav a:active {
+    opacity: 100%;
+}
+#hamburger {
+    cursor: pointer;
+    width: 50px; height: 50px;
+    border-radius: 25px;
+    background-color: #763188;
+    opacity: 75%;
+    position: absolute;
+    top: 1.2em; right: 5%;   
+    transition: all 0.5s;
+}
+#hamburger:hover {
+    opacity: 100%;
+}
+#bar1, #bar2, #bar3 {
+    position: relative;
+    top: 8.5px;
+    width: 30px; height: 4px;
+    margin: 5px auto 5px auto;
+    background-color: white;
+    border-radius: 2.5px;
+    transition: all 0.5s;
+}
+.change #bar1{
+    -webkit-transform: rotate(-45deg) translate(-7px, 7px);
+    transform: rotate(-45deg) translate(-7px, 7px);
+}
+.change #bar2 {
+    opacity: 0%;
+}
+.change #bar3 {
+    -webkit-transform: rotate(45deg) translate(-7px, -7px);
+    transform: rotate(45deg) translate(-6px, -6px);
+}
+#side {
+    width: 100%; height: 100%;
+    background-color: #9864A6;
+    position: fixed;
+    top: 0; left: 0;
+    z-index: +1;
+}
+.hidden {
+    display: none;
+}
+#side nav {
+    width: 70%; height: auto;
+    position: relative;
+    top: 150px; left: 15%; 
+}
+.menu:link,
+.menu:visited {
+    text-decoration: none;
+    color: white;
+    font-size: 3em;
+    font-weight: bold;
+}
+.underline {
+    width: 0px; height: 10px;
+    background-color: white;
+    position: relative;
+    left: 4px;
+    transition: all 0.25s; 
+}
+.menu:hover + .underline {
+    width: 168px;
+}
+hr {
+    border: 0.5px solid white;
+}
+#wrapper {
+/*    display: inline;*/
+    width: 100%; height: auto;
+    position: relative;
+    margin-top: 8em;
+    text-align: center;
+}
+#phone {
+    width: 100%; height: auto;
+    max-width: 600px;
+    position: relative;
+    margin-left: 2em;
+}
+.bubble {
+    width: 100%; height: auto;
+    padding-bottom: 2em;
+}
+.quote {
+    display: block;
+    width: 60%; height: auto;
+    max-width: 400px;
+    margin: 6em auto 2em auto;
+}
+.button {
+    margin: auto;padding: 1em;
+    width: 150px; height: auto;
+    border-radius: 10px;
+    transition: all 0.25s;
+    font-size: 1.2em;
+}
+.button:hover {
+    cursor: pointer;
+    color: white;
+}
+.purple {
+    color: #9864A6;
+    border: 1.5px solid #9864A6;
+}
+.purple:hover {
+    background-color: #9864A6;
+}
+.blue {
+    color: #87C5E2;
+    border: 1.5px solid #87C5E2;
+}
+.blue:hover {
+    background-color: #87C5E2;
+}
+.orange {
+    color: #EDAE7D;
+    border: 1.5px solid #EDAE7D;
+}
+.orange:hover {
+    background-color: #EDAE7D;
+}

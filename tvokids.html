@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>TVOKids: Cyberbullying Awareness</title>
+        <link rel="icon" type="image/png" href="images/flavicon.png">
+        
+        <!--    META    -->
+        <meta charset="utf-8" lang="en"/> 
+        <meta name="author" content="Justine Magbitang"/>
+        <meta name="description" content="Educating kids and adults about cyberbullying."/>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <!--    CSS    -->
+        <link href="ugh.css" type="text/css" rel="stylesheet" media="all"/>
+        <link href="stylesheets/main.css" type="text/css" rel="stylesheet" media="all"/>
+        <link href="stylesheets/mediaqueries.css" type="text/css" rel="stylesheet" media="all"/>
+        
+        <!--  JQUERY  -->
+        <script type="text/javascript" src="scripts/jquery-3.6.3.min.js"></script>
+        <script type="text/javascript" src="scripts/jquery-ui-1.13.2/jquery-ui.js"></script>
+        <script>
+            $(document).ready(function() {
+                $("#hamburger").click(function() {
+                    $(this).toggleClass("change"); 
+                    $("#side").toggleClass("hidden");
+                });
+            });
+        </script>
+            
+    </head>
+    
+    <body>
+        
+        <div id="banner">
+            <img id="TVOKidsLogo" src="images/TVOKids_1200px.png" alt="TVOKids Logo"/>
+
+            <nav id="topmenu">
+                <a href="#" target="_self">Learn</a>
+                <a href="#" target="_self">Find Help</a>
+                <a href="#" target="_self">Parents & Guardians</a>
+            </nav>
+            
+            <div id="hamburger">
+                <div id="bar1"></div>
+                <div id="bar2"></div>
+                <div id="bar3"></div>
+            </div>
+        </div>
+        
+        <div id="side" class="hidden">
+            <nav>
+                <a class="menu" href="#" target="_self">Learn</a>
+                <div class="underline"></div><br><hr><br>
+                <a class="menu" href="#" target="_self">Find Help</a>
+                <div class="underline"></div><br><hr><br>
+                <a class="menu" href="#" target="_self">Parents & Guardians</a>
+                <div class="underline"></div><br><hr><br>
+            </nav>
+        </div>
+        
+        <div id="wrapper">
+            <img id="phone" src="images/phone.png">
+            
+            <div class="quote">
+                <img class="bubble left" src="images/bubble_red.png">
+                <div class="purple button">What is Cyberbullying?</div>
+            </div>
+            
+            <div class="quote">
+                <img class="bubble left" src="images/bubble_blue.png">
+                <div class="blue button">Consequences of Cyberbullying</div>
+            </div>
+            
+            <div class="quote">
+                <img class="bubble left" src="images/bubble_orange.png">
+                <div class="orange button">Consequences of Cyberbullying</div>
+            </div>
+            
+<!--
+            <img class="bubble left" src="images/bubble_blue.png">
+            <img class="bubble right" src="images/bubble_orange.png">
+-->
+        </div>
+    </body>
+</html>
