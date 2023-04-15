@@ -3,23 +3,75 @@
     #topmenu {
         display: none;
     }
+    #onlinesafety {
+        margin-left: -2em;
+        padding-top: 1em;
+    }
 }
 /*WHEN LARGE SCREEN*/
 @media screen and (min-width: 641px) {
-    #hamburger {
+    #hamburger, #side {
         display: none;
     }
-    #side {
+    .topics + hr {
         display: none;
+    }
+    #wrapper button {
+        display: inline;
+        margin: 1em 1em auto 1em;
     }
 }
-/*WHEN V LARGE SCREEN*/
-/*
-@media screen and (min-width: 1200px) {
-    .left {
-        float: left;
+
+@media screen and (max-width: 878px) {
+    #idk {
+        font-size: 0.75em;
     }
-    .right {
-        float: right;
+    #shaft, #point1, #point2, #point3, #point4 {
+        height: 2.5px;
     }
-}*/
+    #buttons button {
+        width: 400px; height: 200px;
+    }
+    button p {
+        font-size: 2em;
+    }
+    #topics {
+        display: block;
+        width: 70%;
+        margin: 2em auto auto auto;
+    }
+    #title, #help {
+        font-size: 3em;
+        margin: 1em;
+    }
+    #title2 {
+        font-size: 2em;
+    }
+    #help {
+        display: block;
+        position: relative;
+        left: 5%;
+        text-align: center;
+        width: 70%;
+    }
+    .info, .info2 {
+        font-size:  1.5em;
+    }
+    .info2 {
+        width: 70%;
+        float: none;
+        margin: auto;
+    }
+    .info3 {
+        font-size: 1.2em;
+    }
+    #cyberbullied1, #cyberbullied2 {
+        float: none;
+        margin-top: 2em;
+        margin-bottom: 2em;
+        margin-left: 0;
+    }
+    #onlinesafety {
+        height: 250px;
+    }
+}

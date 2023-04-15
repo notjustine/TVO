@@ -1,8 +1,15 @@
 body {
     font-family: Arial, sans-serif;
+    line-height: 1.5;
+}
+#wrapper {
+    margin: 8em auto 2em auto;
+    overflow-x: hidden;
+    text-align: center;
+    width: 100%; height: auto;
+    max-width: 1000px;
 }
 #banner {
-/*    display: none;*/
     width: 100%; height: auto;
     background-color: white;
     position: fixed;
@@ -23,42 +30,32 @@ body {
 #topmenu {
     display: inline;
     position: relative;
-    left: 3%; bottom: 35px; 
-    font-size: 120%;
-    font-weight: bold;
+    left: 5%; bottom: 35px;
 }
-#banner nav a {
+#topmenu a {
     margin-left: 3%;
 }
-#banner nav a:link,
-#banner nav a:visited {
+#topmenu a:link,
+#topmenu a:visited {
     text-decoration: none;
-    color: #763188;
     opacity: 75%;
-}
-#banner nav a:hover,
-#banner nav a:active {
+} 
+#topmenu a:hover,
+#topmenu a:active {
     opacity: 100%;
 }
 #hamburger {
     cursor: pointer;
-    width: 50px; height: 50px;
-    border-radius: 25px;
-    background-color: #763188;
-    opacity: 75%;
     position: absolute;
-    top: 1.2em; right: 5%;   
+    right: 5%; 
+    display: block;
     transition: all 0.5s;
-}
-#hamburger:hover {
-    opacity: 100%;
 }
 #bar1, #bar2, #bar3 {
     position: relative;
     top: 8.5px;
     width: 30px; height: 4px;
     margin: 5px auto 5px auto;
-    background-color: white;
     border-radius: 2.5px;
     transition: all 0.5s;
 }
@@ -75,7 +72,6 @@ body {
 }
 #side {
     width: 100%; height: 100%;
-    background-color: #9864A6;
     position: fixed;
     top: 0; left: 0;
     z-index: +1;
@@ -91,89 +87,128 @@ body {
 .menu:link,
 .menu:visited {
     text-decoration: none;
-    color: white;
-    font-size: 3em;
     font-weight: bold;
     transition: all 0.25s;
 }
 .underline {
-    width: 0px; height: 7.5px;
-    background-color: white;
+    width: 0px;
     position: relative;
     left: 4px; top: 5px;
     transition: all 0.25s; 
 }
-.menu:hover {
-    font-size: 3.2em;
-}
 .menu:hover + .underline {
     width: 150px;
 }
-hr {
-    border: 0.5px solid white;
+#idk {
+    color: #999999;
 }
-#wrapper {
-/*    display: inline;*/
-    width: 100%; height: auto;
-    position: relative;
-    margin-top: 8em;
-    text-align: center;
+#idk:hover {
+    color: black;
 }
-#phone {
-    width: 100%; height: auto;
-    max-width: 600px;
-    position: relative;
-    margin-left: 2em;
-}
-.bubble {
-    width: 100%; height: auto;
-    padding-bottom: 2em;
-}
-.quote {
-    display: block;
-    width: 60%; height: auto;
-    max-width: 400px;
-    margin: 6em auto 2em auto;
-}
-.button {
-    margin: auto;padding: 1em;
-    width: 150px; height: auto;
-    border-radius: 10px;
-    transition: all 0.25s;
-    font-size: 1.2em;
-}
-.button:hover {
+#idk:hover > #arrow {
     cursor: pointer;
-    color: white;
+    width: 150px; 
 }
-.purple {
-    color: #9864A6;
-    border: 1.5px solid #9864A6;
+#idk:hover #shaft {
+    background-color: black;
 }
-.purple:hover {
-    background-color: #9864A6;
+#idk:hover #point1 {
+    background-color: black;
 }
-.blue {
-    color: #87C5E2;
-    border: 1.5px solid #87C5E2;
+#idk:hover #point2 {
+    background-color: black;
 }
-.blue:hover {
-    background-color: #87C5E2;
+#idk:hover #point3 {
+    background-color: black;
 }
-.orange {
-    color: #EDAE7D;
-    border: 1.5px solid #EDAE7D;
+#idk:hover #point4 {
+    background-color: black;
 }
-.orange:hover {
-    background-color: #EDAE7D;
+#next, #arrow {
+    display: inline-block;
+    vertical-align: middle;
+}
+#arrow {
+    position: relative;
+    width: 100px; height: 45px;
+    transition: all 0.25s;
+}
+#shaft {
+    width: 100%; height: 4px;
+    background-color: #999999;
+    position: absolute;
+    top: 20px;
+}
+#point1, #point2, #point3, #point4 {
+    width: 20px; height: 4px;
+    background-color: #999999;
+    position: absolute;
+}
+#point1 {
+    top: 14px; right: -2px;
+    transform: rotate(45deg);
+}
+#point2 {
+    top: 26px; right: -2px;
+    transform: rotate(-45deg);
+}
+#point3 {
+    top: 14px;left: -2px;
+    transform: rotate(-45deg);
+}
+#point4 {
+    top: 26px; left: -2px;
+    transform: rotate(45deg);
 }
 footer {
-    width: 100%; height: 100px;
-    position: fixed; 
-    bottom: 0; left: 0;
-/*    right: 0; bottom: 0; left: 0;*/
-    background-color: #357E9F;
+    width: 100%; height: auto;
+    position: absolute;
+    left: 0;
+    color: white;
+    text-align: center;
 }
-#TVOBlueLogo {
-    width: 50%;
+#TVOfooter {
+    display: block;
+    margin: 1.5em auto 1.5em auto;
+}
+h3 {
+    margin-bottom: 0.5em;
+}
+.socialicon {
+    display: inline;
+    margin-right: 1em;
+    position: relative;
+}
+.socialicon img {
+    width: 35px;
+}
+footer p {
+    width: 50%; 
+    min-width: 360px; max-width: 540px;
+    line-height: 1.5;
+    margin: auto;
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+#references:link,
+#references:visited {
+    text-decoration: none;
+    color: white;
+}
+#references:hover {
+    text-decoration: underline;
+}
+.sitesource, .artist, .work {
+    text-decoration: none;
+    color: black;
+}
+.sitesource b, .artist {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+.sitesource:hover, .artist:hover, .work:hover {
+    color: #ED1944;
+}
+.noline {
+    text-decoration: none;
 }

@@ -8,17 +8,49 @@
         <!--    META    -->
         <meta charset="utf-8" lang="en"/> 
         <meta name="author" content="Justine Magbitang"/>
-        <meta name="description" content="Educating kids and adults about cyberbullying."/>
+        <meta name="keywords" content="Cyberbullying, kids, prevention, awareness"/>
+        <meta name="description" content="Educating kids and adults about cyberbullying, its negative effects, and how to get help."/>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         
         <!--    CSS    -->
-        <link href="stylesheets/main.css" type="text/css" rel="stylesheet" media="all"/>
+        <link href="stylesheets/landing.css" type="text/css" rel="stylesheet" media="all"/>
         <link href="stylesheets/mediaqueries.css" type="text/css" rel="stylesheet" media="all"/>
+        
+        <!--    JAVASCRIPT    -->
+        <script>
+            function rollOverKids(){
+                document.phone.src = "images/phone_kids.png";
+            }
+            function rollOverAdults(){
+                document.phone.src = "images/phone_adults.png";
+            }
+            function rollOut() {
+			document.phone.src = "images/phone_main.png";
+            }
+        </script>
     </head>
     
     <body>
-        <div>
-            <a href="tvokids.html" target="_self">click here</a>
+        <div id="wrap">
+            
+            <div id="buttons">
+                <a href="tvokids.html" target="_self">
+                    <button type="button" onclick="tvokids.html" onmouseover="rollOverKids();" onmouseout="rollOut();">
+                        <img id="kids" src="images/TVOKids_1200px.png" alt="TVOKids Logo">
+                        <p>For Tweens Ages 9-12</p>
+                    </button>
+                </a>
+                <a href="tvo.html" target="_self">
+                    <button type="button" onmouseover="rollOverAdults();" onmouseout="rollOut();">
+                        <img id="adults" src="images/TVO_Red_1200px.png" alt="TVO Logo">
+                        <p>For Parents & Guardians</p>
+                    </button>
+                </a>
+            </div>
+            
+            <img id="phone" name="phone" src="images/phone_main.png" alt="Hand holding smartphone">
+            
         </div>
+        
     </body>
 </html>

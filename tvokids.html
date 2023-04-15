@@ -8,12 +8,13 @@
         <!--    META    -->
         <meta charset="utf-8" lang="en"/> 
         <meta name="author" content="Justine Magbitang"/>
-        <meta name="description" content="Educating kids and adults about cyberbullying."/>
+        <meta name="keywords" content="Cyberbullying, kids, prevention, awareness"/>
+        <meta name="description" content="Educating kids and adults about cyberbullying, its negative effects, and how to get help."/>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         
         <!--    CSS    -->
-        <link href="ugh.css" type="text/css" rel="stylesheet" media="all"/>
         <link href="stylesheets/main.css" type="text/css" rel="stylesheet" media="all"/>
+        <link href="stylesheets/tvokids.css" type="text/css" rel="stylesheet" media="all"/>
         <link href="stylesheets/mediaqueries.css" type="text/css" rel="stylesheet" media="all"/>
         
         <!--  JQUERY  -->
@@ -27,17 +28,22 @@
                 });
             });
         </script>
+        
+        <!--  MODAL WINDOW   -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
             
     </head>
     
     <body>
-        
         <div id="banner">
-            <img id="TVOKidsLogo" src="images/TVOKids_1200px.png" alt="TVOKids Logo"/>
+            <a class="noline" href="tvokids.html" target="_self">
+                <img id="TVOKidsLogo" src="images/TVOKids_1200px.png" alt="TVOKids Logo"/>
+            </a>
 
             <nav id="topmenu">
-                <a href="#" target="_self">Learn</a>
-                <a href="#" target="_self">Find Help</a>
+                <a href="learn.html" target="_self">Learn</a>
+                <a href="consequences.html" target="_self">Find Help</a>
                 <a href="tvo.html" target="_self">Parents & Guardians</a>
             </nav>
             
@@ -50,9 +56,9 @@
         
         <div id="side" class="hidden">
             <nav>
-                <a class="menu" href="#" target="_self">Learn</a>
+                <a class="menu" href="learn.htm" target="_self">Learn</a>
                 <div class="underline"></div><br><hr><br>
-                <a class="menu" href="#" target="_self">Find Help</a>
+                <a class="menu" href="consequences.html" target="_self">Find Help</a>
                 <div class="underline"></div><br><hr><br>
                 <a class="menu" href="tvo.html" target="_self">Parents & Guardians</a>
                 <div class="underline"></div><br><hr><br>
@@ -60,23 +66,102 @@
         </div>
         
         <div id="wrapper">
-            <img id="phone" src="images/phone.png">
             
-            <div class="quote">
-                <img class="bubble left" src="images/bubble_red.png">
-                <div class="purple button">What is Cyberbullying?</div>
-            </div>
+            <img id="phonekids" src="images/phone_kids.png" alt="Learn what cyberbullying means and how to seek help">
             
-            <div class="quote">
-                <img class="bubble left" src="images/bubble_blue.png">
-                <div class="blue button">Consequences of Cyberbullying</div>
-            </div>
+            <a class="topics" href="learn.html" target="_self">
+                <button>
+                    <img class="bubble" src="images/bubble_red.png" alt="">
+                    <p class="purple">What is Cyberbullying?</p>
+                    <div class="purpleBG under"></div>
+                </button>
+            </a>
+            <hr>
+            <a class="topics" href="#" target="_self">
+                <button >
+                    <img class="bubble" src="images/bubble_orange.png" alt="">
+                    <p class="orange">What are the Consequences?</p>
+                    <div class="orangeBG under"></div>
+                </button>
+            </a>
+            <hr>
+            <a class="topics" href="findhelp.html" target="self">
+                <button >
+                    <img class="bubble" src="images/bubble_blue.png" alt="">
+                    <p class="blue">Where can I Find Help?</p>
+                    <div class="blueBG under"></div>
+                </button>
+            </a>
             
-            <div class="quote">
-                <img class="bubble left" src="images/bubble_orange.png">
-                <div class="orange button">Consequences of Cyberbullying</div>
-            </div>
         </div>
         
+        <!--    FOOTER    -->
+        <footer class="kids">
+            <img id="TVOfooter" src="images/TVO_Footer.png" alt="TVO Logo">
+
+            <p> 
+                TVO is a registered charity #85985 0232 RR0001 1-800-463-6886 Copyright © 2023 The Ontario Educational Communications Authority (TVO)
+                <br><br>
+                <a id="references" href="#infosources" rel="modal:open">References</a> | <a id="references" href="#imagesources" rel="modal:open">Image Sources</a>
+            </p>
+        </footer>
+        
+        <!--      MODAL WINDOWS      -->
+        <div id="infosources" class="hidden">
+            All information is sourced from Canadian websites.
+            
+            <br><br>
+            
+            <a class="sitesource" href="https://www.canada.ca/en/public-safety-canada/campaigns/cyberbullying/cyberbullying-against-law.html" target="_blank"><b>Government of Canada</b> Cyberbullying can be against the law</a>.<br>
+            
+            <a class="sitesource" href="https://www.priv.gc.ca/en/about-the-opc/what-we-do/awareness-campaigns-and-events/privacy-education-for-kids/" target="_blank"><b>The Office of the Privacy Commissioner of Canada (OPC)</b> Privacy education for kids</a>;
+            <a class="sitesource" href="https://www.priv.gc.ca/en/about-the-opc/what-we-do/awareness-campaigns-and-events/privacy-education-for-kids/tips-for-parents/" target="_blank">Tips for parents</a>;
+            <a class="sitesource" href="https://www.priv.gc.ca/en/about-the-opc/what-we-do/awareness-campaigns-and-events/privacy-education-for-kids/fs-fi/tips/" target="_blank">12 quick online privacy tips for parents</a>;
+            <a class="sitesource" href="https://www.priv.gc.ca/en/about-the-opc/what-we-do/awareness-campaigns-and-events/privacy-education-for-kids/topic-sujet/index/" target="_blank">Topics to talk about</a>.<br>
+            
+            <a class="sitesource" href="https://www.rcmp-grc.gc.ca/en/bullying/impacts-and-consequences-bullying-and-cyberbullying" target="_blank"><b>Royal Canadian Mounted Police</b> Impacts and consequences of bullying and cyberbullying</a>.<br>
+            
+            <a class="sitesource" href="https://www.redcross.ca/how-we-help/violence-bullying-and-abuse-prevention/youth/cyberbullying" target="_blank"><b>Canadian Red Cross</b> Cyberbullying</a>.<br>
+        
+        </div>
+        <div id="imagesources" class="hidden">
+            All images are sourced from Adobe Stock, and edited by Justine Magbitang.
+            
+            <br><br>
+            
+            <a class="artist" href="https://stock.adobe.com/ca/contributor/208173043/lakee-mnp?load_type=author&prev_url=detail" target="_blank">Lake MNP</a>
+            <a class="work" href="https://stock.adobe.com/ca/540168100?asset_id=540168100" target="_blank">Phone holding Hand Gestures icon</a>.<br>
+            
+            <a class="artist" href="https://stock.adobe.com/ca/contributor/208217896/anuwat?load_type=author&prev_url=detail" target="_blank">anuwat</a>
+            <a class="work" href="https://stock.adobe.com/ca/547431781?asset_id=547431781" target="_blank">Speech balloon frame Support communication [red and purple]</a>;
+            <a class="work" href="https://stock.adobe.com/ca/547431737?asset_id=547431737" target="_blank">Speech balloon frame Support communication [green and yellow]</a>;
+            <a class="work" href="https://stock.adobe.com/ca/547431772?asset_id=547431772" target="_blank">Speech balloon frame Support communication [blue and white]</a>.<br>
+            
+            <a class="artist" href="https://stock.adobe.com/ca/contributor/203882381/roman3d?load_type=author&prev_url=detail" target="_blank">roman3d</a>
+            <a class="work" href="https://stock.adobe.com/ca/552673231" target="_blank">Portrait of successful asian programmer...</a>;
+            <a class="work" href="https://stock.adobe.com/ca/506662944" target="_blank">Red-haired happy romantic writer girl...</a><br>
+            
+            <a class="artist" href="https://stock.adobe.com/ca/contributor/207951890/%D0%B0%D0%BD%D0%BD%D0%B0-%D1%82%D0%BE%D1%89%D0%B5%D0%B2%D0%B0?load_type=author&prev_url=detail" target="_blank">Анна Тощева</a>
+            <a class="work" href="https://stock.adobe.com/ca/586128647" target="_blank">Young smiling man taking selfie...</a>;<br>
+            <a class="work" href="https://stock.adobe.com/ca/474171338" target="_blank">Phone handset with speech bubble...</a><br>
+            
+            <a class="artist" href="https://stock.adobe.com/ca/contributor/208998639/accogliente?load_type=author&prev_url=detail" target="_blank">accogliente</a>
+            <a class="work" href="https://stock.adobe.com/ca/498345741" target="_blank">3D Two Hands holding mobile phone...</a>
+            <a class="work" href="https://stock.adobe.com/ca/518408114" target="_blank">3D Hand holding security shield and padlock...</a><br>
+            
+            <a class="artist" href="https://stock.adobe.com/ca/contributor/207447865/tatiana-sidenko?load_type=author&prev_url=detail" target="_blank">Tatiana Sidenko</a>
+            <a class="work" href="https://stock.adobe.com/ca/506772133" target="_blank">3d education and social media icons...</a><br>
+            
+            <a class="artist" href="https://stock.adobe.com/ca/contributor/210428706/fahrul?load_type=author&prev_url=detail" target="_blank">Fahrul</a>
+            <a class="work" href="https://stock.adobe.com/ca/560890544?asset_id=560890544" target="_blank">3d illustration of black guy reading...</a>;
+            <a class="work" href="https://stock.adobe.com/ca/560890549?asset_id=560890549" target="_blank">3d illustration of a man getting cyberbully</a>.<br>
+
+            <a class="artist" href="https://stock.adobe.com/ca/contributor/206035542/comauthor?load_type=author&prev_url=detail" target="_blank">Comauthor</a>
+            <a class="work" href="https://stock.adobe.com/ca/Library/urn:aaid:sc:US:97da5127-b614-4329-b4ae-d8b796023e82?asset_id=306012476" target="_blank">Realistic social media logotype collection...</a><br>
+            
+            <a class="artist" href="https://stock.adobe.com/ca/contributor/209051885/kannapat?load_type=author&prev_url=detail" target="_blank">Kannapat</a>
+            <a class="work" href="https://stock.adobe.com/ca/549360837?asset_id=549360837" target="_blank">3d Opened laptop screen with keyboard...</a><br>
+        </div>
+            
     </body>
 </html>
